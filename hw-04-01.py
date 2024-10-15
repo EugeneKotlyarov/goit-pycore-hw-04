@@ -5,6 +5,8 @@ import pathlib
 # and return tuple with total salary and avarage salary
 # or
 # error in string if something goes wrong
+
+
 def total_salary(filename: str) -> tuple:
 
     # find path to our .py scrypt file
