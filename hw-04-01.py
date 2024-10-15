@@ -17,12 +17,12 @@ def total_salary(filename: str) -> tuple:
         with open(current_dir / filename, "r", encoding="utf-8") as file:
             lines = [line.strip() for line in file.readlines()]
 
-            # variables for: dict of tuples of all our workers, resulting total and average salary
+            # variables for: list of tuples of all our workers, resulting total and average salary
             workers = []
             salary_total = 0
             salary_avrg = 0
 
-            # next 3 parts is function itself: create dictionary, calcuate results
+            # next 3 parts is function itself: create list, calcuate results
             for l in lines:
                 workers.append(tuple(l.split(",")))
 
