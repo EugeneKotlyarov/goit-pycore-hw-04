@@ -1,4 +1,10 @@
-import pathlib, re
+import pathlib
+
+
+# get_cats_info function accepts relative path to cats info text file
+# and return list of dicts with all information
+# or
+# error in string if something goes wrong
 
 
 def get_cats_info(filename: str) -> dict:
